@@ -87,7 +87,8 @@ pnpm start
 
 ### Screen recording of docs
 
-https://github.com/user-attachments/assets/3810b70a-3c62-43d7-a748-d84e36823ee1
+https://github.com/user-attachments/assets/68b45f6f-8102-4be6-97e8-9c77274030d5
+
 
 ### API docs
 
