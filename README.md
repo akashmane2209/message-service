@@ -89,6 +89,10 @@ pnpm start
 
 https://github.com/user-attachments/assets/3810b70a-3c62-43d7-a748-d84e36823ee1
 
+### API docs
+
+View docs [a link](https://github.com/akashmane2209/message-service/tree/main/docs/api.md)
+
 ### Improvements
 
 1. Implement message queue to asyncrounously process messages with Kafka
