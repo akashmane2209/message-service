@@ -87,7 +87,11 @@ pnpm start
 
 ### Screen recording of docs
 
-
-
 https://github.com/user-attachments/assets/3810b70a-3c62-43d7-a748-d84e36823ee1
 
+### Improvements
+
+1. Implement message queue to asyncrounously process messages with Kafka
+2. Implement sockets for realtime connection
+3. More roboust user authentication
+4. User logged in user to create chats & messages
