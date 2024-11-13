@@ -11,6 +11,7 @@
 - Stoker - OpenAPI Utils
 - Pino - Logger
 - Jwt - Authentication
+- Typesafe env variables
 
 To run the project use docker compose up to run the web server and postgres in containers
 
@@ -45,9 +46,12 @@ To run
 docker run --name chat-postgres -e POSTGRES_PASSWORD=mypassword -d -p 5432:5432 postgres
 ```
 
-2. Update env file with database url
+2. Update env file with database url & other variables
 
 ```sh
+NODE_ENV=development
+PORT=3000
+LOG_LEVEL=debug
 DATABASE_URL=postgres://postgres:mypassword@localhost:5432/postgres
 JWT_SECRET=secret
 ```
@@ -82,3 +86,8 @@ pnpm start
 6. Visit docs open - http://localhost:3000/reference in browser
 
 ### Screen recording of docs
+
+
+
+https://github.com/user-attachments/assets/3810b70a-3c62-43d7-a748-d84e36823ee1
+
