@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  postgresdb:
+    image: postgres:15
+    restart: unless-stopped
+    volumes:
+      - db:/var/lib/postgres
+    environment:
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5434:5432"
+  app:
+    depends_on:
+      - postgresdb
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - 4000:4000
+    environment:
+      - DATABASE_URL=postgres://postgres:mypassword@postgresdb:5432/postgres
+      - JWT_SECRET=secret
+      - NODE_ENV=production
+      - PORT=4000
+
+    stdin_open: true
+    tty: true
+
+volumes: 
+  db:
