@@ -7,7 +7,7 @@ export default function configureOpenAPI(app: AppOpenAPI) {
     openapi: "3.0.0",
     info: {
       version: "0.0.1",
-      title: "Message API",
+      title: "Chat API",
     },
   });
 

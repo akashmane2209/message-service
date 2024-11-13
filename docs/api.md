@@ -1,4 +1,4 @@
-# Message API
+# Chat API
 
 ## Version: 0.0.1
 
