@@ -27,6 +27,7 @@ services:
       - JWT_SECRET=secret
       - NODE_ENV=production
       - PORT=4000
+      - LOG_LEVEL=info
 
     stdin_open: true
     tty: true
